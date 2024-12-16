@@ -1,0 +1,80 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items : center;
+}
+
+.bg{
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width : 100vw;
+}
+
+.title {
+    margin-top: 1em;
+    color: white;
+    position: relative;
+    padding-bottom: 0.5em;
+    border-bottom: solid 2px white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Enhanced text shadow */
+    font-size: 2em; /* Adjusted for visibility */
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* More pronounced border shadow */
+    z-index: -1;
+}
+
+.forum-flex{
+    display : flex;
+    flex-direction : column;
+    margin-top : 2em;
+     
+    justify-content : flex-start;
+    align-items : center;
+    gap : 1em;
+
+    width : auto;
+    height: auto;
+}
+
+.forum-card {
+    color : black;
+
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent white */
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 2em 5vw;
+    
+    gap: 0.4em;
+
+    /* Apply blur effect to the background */
+    backdrop-filter: blur(10px); /* Adjust the blur intensity */
+    -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+}
+
+
+.forum-card h1{
+    border-bottom : 2px solid black;
+}
+

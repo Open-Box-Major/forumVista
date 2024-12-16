@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forumVista</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script type = module src = "main.js"></script>
+
+    <style>
+    h1 {
+    margin-top: 1em;
+    color: white;
+    position: relative;
+    padding-bottom: 0.5em;
+    border-bottom: solid 2px white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Enhanced text shadow */
+    font-size: 2em; /* Adjusted for visibility */
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    }
+
+    #downloadTable-button {
+        color : black;
+
+        margin: 2em 0;
+        padding: .4em 2em;
+        border: solid 2px black;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Blur effect on the background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the button */
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    table {
+    width: 90vw;
+    border-collapse: collapse; /* Ensures that borders between cells merge */
+    padding: .4em 2em;
+    border: solid 2px black;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8); /* Less transparent background for better readability */
+    backdrop-filter: blur(10px); /* Blur effect on the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the table */
+    }
+
+    th, td {
+        padding: 1em;
+        text-align: left;
+        border: solid 1px #ccc; /* Add borders for table cells */
+    }
+
+    thead {
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for header */
+        border-bottom: 2px solid black; /* Border below the header */
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.05); /* Alternating row colors for better readability */
+    }
+
+    tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Slightly darker on hover */
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    table, th, td {
+        border-radius: 8px;
+    }
+
+    </style>
+</head>
+<body>
+    <img class = "bg" src = "assets/bg.jpg">
+    <button id = "downloadTable-button">Download CSV</button>
+    <div class="table-flex">
+
+    </div>
+</body>
+</html>
